@@ -22,7 +22,7 @@ const theme = createMuiTheme({
       //   contrastText: '#000',
     },
     text: {
-      // primary: '#031e11', //цвет всего текста
+      primary: '#031e11', //цвет всего текста
       secondary: '#196943', // для виджетов
       // disabled: '#00227b',
       // hint: '#ffc107',
