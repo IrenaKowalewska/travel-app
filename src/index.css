@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.video-react .video-react-big-play-button.video-react-big-play-button-center {
+  position: absolute;
+  border: 2px solid #196943;
+  margin-top: -0.8em;
+  margin-left: -0.8em;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  color: #196943;
+  background-color: #e1fafe;
+}
+.video-react:hover
+  .video-react-big-play-button.video-react-big-play-button-center,
+.video-react:hover
+  .video-react-big-play-button.video-react-big-play-button-center::before {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #196943;
+  border-radius: 50%;
+}
+.video-react-video:focus{
+  outline: none;
+}
+
