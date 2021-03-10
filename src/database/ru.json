@@ -13,14 +13,34 @@
       "countryImg": "https://news.liga.net/images/general/2020/09/03/thumbnail-tw-20200903082425-6020.jpg?v=1599114620",
       "gallery": [
         {
-          "place": "Pamukkale", 
+          "place": "Памуккале (Памуккале)", 
           "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
           "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
+          "place": "Амфитеатр Аспендоса (Памфилия)",
           "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
           "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+        }, 
+        {
+          "place": "Голубая мечеть (Стамбул)",
+          "info": "р ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Turkey-3-The-Sultan-Ahmed-Mosque-e1491886732160.jpg"
+        },
+        {
+          "place": "Крепость (Аланья)",
+          "info": "р ",
+          "img": "https://posmotrim.by/pics/dd869a480.jpg"
+        },
+        {
+          "place": "Олюдениз",
+          "info": "Самый красивый курорт Турции ",
+          "img": "https://stihi.ru/pics/2017/09/20/6276.jpg"
+        },
+        {
+          "place": "Бассейн Клеопатры (Памуккале)",
+          "info": "k",
+          "img": "https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/pamukkale-12.jpg"
         }
       ]
     },
@@ -37,14 +57,34 @@
       "countryImg": "https://newsgomel.by/upload/iblock/026/026f397d6f262b81d8afaea5f3d9180b.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Храм Аполлона (г.Дельфы)", 
+          "info": "", 
+          "img":  "https://euro-travels.org/wp-content/uploads/2014/11/Hram-Apollona2.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": "Пляж Навагио (остров Закинф)",
+          "info": " ",
+          "img": "https://kuku.travel/wp-content/uploads/2017/09/Navagio-Beach-Zakynthos-Greece_CS.jpg"
+        },
+        {
+          "place": "Монастыри Метеоры (г. Каламбака)",
+          "info": " ",
+          "img": "https://www.ksenia-travel.com/app/uploads/2017/01/meteora-big-2.jpg"
+        },
+        {
+          "place": "Петалу́дес - Долина бабочек (остров Родос)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Greece-15-he-valley-of-the-butterflies-in-Rhodes-e1492060355969.jpg"
+        },
+        {
+          "place": "Афинский акрополь (г. Афины)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Greece-1-The-Acropolis-of-Athens-e1492057156480.jpg"
+        },
+        {
+          "place": "Храм Зевса Олимпийского (г. Афины)",
+          "info": " ",
+          "img": "https://fs.tonkosti.ru/e4/js/e4jssixtpq0wkc0k40kss80wk.jpg"
         }
       ] 
     },
@@ -61,16 +101,36 @@
       "countryImg": "http://globalextreme.ru/wp-content/uploads/2018/06/Benidorm.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Храм Святого Семейства (Барселона)", 
+          "info": "", 
+          "img":  "https://iespanol.ru/wp-content/uploads/2019/06/sagrada-familia-1.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": "Парк Гуэля (Барселона)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Spain-4-The-Park-Guell-e1491983063738.jpg"
+        },
+        {
+          "place": "Ибица",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Spain-10-Toledos-Old-City-e1491984860546.jpg"
+        },
+        {
+          "place": "Лоро-парк (Пуэрто-де-ла-Крус)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2019/01/24-Loro_Park_Puerto-de-la-Cruz-e1561235023607.jpg"
+        },
+        {
+          "place": "Королевский дворец (Мадрид)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2019/01/18-Royal_palace_in_madrid-e1561234525665.jpg"
+        },
+        {
+          "place": "Старый город Толедо (Толедо)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Spain-14-Toledo-old-city-e1491985702876.jpg"
         }
-      ] 
+      ]  
     },
     {
       "country": "Италия", 
@@ -85,14 +145,34 @@
       "countryImg": "https://language.az/wp-content/uploads/2020/04/tury_v_italiiu-b.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Колизей (г. Рим)", 
+          "info": "", 
+          "img":  "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Italy-4-The-Colosseum-e1492907340872.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": "Миланский собор (г. Милан)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Italy-6-Milan-Cathedral--e1492907682367.jpg"
+        },
+        {
+          "place": "Гранд Канал (г. Венеция)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Italy-9-The-Grand-Canal-in-Venice-e1492908547833.jpg"
+        },
+        {
+          "place": "Пизанская башня (г. Пиза)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Italy-10-The-Leaning-Tower-of-Pisa-e1492908680107.jpg"
+        },
+        {
+          "place": "Вулкан Везувий (г. Неаполь)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2019/01/26-Mount_Vesuvius_Naples-e1561270909956.jpg"
+        },
+        {
+          "place": "Чинкве-Терре (регион Лигурия)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2019/01/28-Cinque_Terre_Liguria_region-e1561271004134.jpg"
         }
       ] 
     },
@@ -109,14 +189,34 @@
       "countryImg": "https://nikvesti.com/images/imageeditor/2019/10/11//169565_1.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Сигирия", 
+          "info": "", 
+          "img":  "https://nashaplaneta.net/asia/srilanka/images_sigiriya/sigiriya.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": " Пик Адама",
+          "info": " ",
+          "img": "https://moscow.vita-travel.com/wp-content/uploads/2019/07/pik-adama-shri-lanka.jpg"
+        },
+        {
+          "place": "Долина Канди",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/06/5-Kandy_Valley-e1529964366563.jpg"
+        },
+        {
+          "place": "Чайные плантации Нувара Элия",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/05/14-Nuwara-_liya_and_Tea_Country-e1526625355410.jpg"
+        },
+        {
+          "place": "Пляжи Бентоты",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/05/17-Bentota_Beach-e1526625477556.jpg"
+        },
+        {
+          "place": "Священный город Анурадхапура",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/05/20-Anuradhapura-e1526625599404.jpg"
         }
       ] 
     }, 
@@ -133,14 +233,34 @@
       "countryImg": "https://turamania.ru/wp-content/uploads/2017/11/Naberezhnaya-v-Dubai.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Бурдж-Халифа (г. Дубай)", 
+          "info": "", 
+          "img":  "https://media.ceetiz.com/activity/ALPDXB001/thumbnails/642x450/billet-burj-khalifa-124-dubai-ceetiz.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": "Поющие фонтаны (г. Дубай)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/03/UAE-4-The-Dubai-Fountain-e1490950064151.jpg"
+        },
+        {
+          "place": "Мечеть шейха Зайда (г. Абу-Даби)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/03/UAE-8-Sheikh-Zayed-Grand-Mosque-e1490951119443.jpg"
+        },
+        {
+          "place": "Парк Аль-Мамзар (г. Дубай)",
+          "info": " ",
+          "img": ""
+        },
+        {
+          "place": "Аквариум в Дубай Молл (г. Дубай)",
+          "info": " ",
+          "img": "https://dubai-life.info/wp-content/uploads/2017/10/8765678.jpg"
+        },
+        {
+          "place": "Отель Парус (Бурдж-эль-Араб)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2019/01/22-Hotel-Parus-Burj-Al-Arab-e1561491447673.jpg"
         }
       ] 
     }, 
@@ -157,14 +277,34 @@
       "countryImg": "https://cdnimg.rg.ru/img/content/168/34/71/egipet_d_850.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Пирамиды Гизы (8 км от г. Гиза)", 
+          "info": "", 
+          "img":  "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-1-Giza-Pyramid-e1491277079103.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": "Долина фараонов (г. Луксор)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-2-The-Valley-of-the-Kings-e1491277275454.jpg"
+        },
+        {
+          "place": "Храм Луксора (г. Луксор)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-3-Luxor-Temple-e1491278052766.jpg"
+        },
+        {
+          "place": "Город-курорт Шарм-эль-Шейх (юг Синайского полуострова)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-4-Sharm-El-Sheikh-e1491278283788.jpg"
+        },
+        {
+          "place": "Храм Карнака",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-6-Karnak-Temple-Complex-e1491278874822.jpg"
+        },
+        {
+          "place": "Национальный парк Рос-Мохаммед (юг Синайского полуострова)",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-14-Ras-Mohammad-national-park-e1491281187302.jpg"
         }
       ] 
     },
@@ -181,14 +321,34 @@
       "countryImg": "https://minsknews.by/wp-content/uploads/2020/07/fc60ae8d054bfe97558009d04cba86e4.jpg",
       "gallery": [
         {
-          "place": "Pamukkale", 
-          "info": "природный и культурный объект Всемирного наследия ЮНЕСКО общей площадью около 1077 га в провинции Денизли на юго-западе Турции. В него входят геотермальные источники с температурой воды 36 °C, водоемы-террасы, образовавшиеся из травертина, а также территория древнего города Иераполиса.", 
-          "img":  "https://ru.excursionmarmaris.com/wp-content/uploads/2017/05/sdflkj-5.jpg"
+          "place": "Будва – старый город", 
+          "info": "", 
+          "img":  "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/02/3-Budva_Old_Town-e1518997485630.jpg"
         },
         {
-          "place": "Амфитеатр Аспендоса",
-          "info": " древний город в южной части Турции. Руины города находятся в 35 км от Анталии, неподалёку от посёлка Серик. Здесь проходят концерты и различные мероприятия, а летом проводится Фестиваль оперы и балета.",
-          "img": "https://funart.pro/uploads/posts/2019-10/1572171036_aspendos-drevnij-gorod-turcija-1.jpg"
+          "place": "Собор Святого Трифона",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/02/5-Cathedral_of_Saint_Tryphon-e1519000459916.jpg"
+        },
+        {
+          "place": "Монастырь Острог",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/02/7-The_Monastery_of_Ostrog-e1519000757386.jpg"
+        },
+        {
+          "place": "Каньон реки Тара",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/02/14-Tara_River_Canyon-e1519004610178.jpg"
+        },
+        {
+          "place": "Пляж Бечичи",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/02/20-Becici_beach-e1519007387819.jpg"
+        },
+        {
+          "place": "Мост Джурджевича",
+          "info": " ",
+          "img": "https://cdn.tripzaza.com/ru/destinations/wp-content/uploads/2018/02/15-Djurdjevica_Tara_Bridge-e1519004978517.jpg"
         }
       ] 
     }
