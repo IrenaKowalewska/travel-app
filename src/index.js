@@ -5,6 +5,8 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 /*для material ui переопределение дефолтных цветов*/
 const theme = createMuiTheme({
@@ -33,10 +35,12 @@ const theme = createMuiTheme({
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <ScrollToTop />
-        <App />
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          <ScrollToTop />
+          <App />
+        </ThemeProvider>
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
