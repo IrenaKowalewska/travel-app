@@ -1,0 +1,28 @@
+.header {
+    background-color: #034455;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    height: 100%;
+    margin: auto;
+}
+
+.name {
+    color: #fa0;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#search {
+    width: 20rem;
+}
+
+.language span {
+    margin-right: 5px;
+}
