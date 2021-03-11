@@ -5,12 +5,11 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import img from '../assets/images/countries/maldives.jpg';
-import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    width: 255,
+    // width: 255,
+    width: 350,
     [theme.breakpoints.down('xs')]: {
       width: '80%',
     },
@@ -29,26 +28,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const style = {
-  link: {
-    textDecoration: 'none',
-  },
-};
-
-function ImageCard() {
+function ImageCard({country, capital, countryImg}) {
   const classes = useStyles();
 
   return (
-    <NavLink exact to="/country" style={style.link}>
       <Card className={classes.card}>
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="country image" //!!!переопределить, когда будут данные
+            alt={`${country} image`}
             height="140"
-            // image="/src/assets/images/countries/maldives.jpg"
-            image={img}
-            title="Сountry image" //!!!переопределить, когда будут данные
+            image={`assets/countryImg/${countryImg}`}
+            title={`${country} image`}
           />
           <CardContent>
             <Typography
@@ -56,15 +47,14 @@ function ImageCard() {
               color="textPrimary"
               component="h2"
             >
-              Мальдивская Республика
+              {country}
             </Typography>
             <Typography color="textPrimary" component="p">
-              Мале
+              {capital}
             </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
-    </NavLink>
   );
 }
 
