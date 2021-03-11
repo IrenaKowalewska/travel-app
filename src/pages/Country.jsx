@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   info_left: {
     maxWidth: 970,
-    flexGrow:1
+    flexGrow: 1,
   },
 }));
 
@@ -27,7 +27,7 @@ function Page() {
         <div className={classes.info}>
           <div className={classes.info_left}>
             <div>img</div>
-            <div>tekst</div>
+            <div>text</div>
             <div>slider</div>
           </div>
           <div className={classes.info_right}>
@@ -37,12 +37,12 @@ function Page() {
           </div>
         </div>
         {/* //grid */}
-          <Player playsInline poster="/assets/poster.png">
-            <source src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4" />
-            <BigPlayButton position="center" />
-          </Player>
+        <Player playsInline poster="/assets/posters/uae.jpg">
+           <source src="assets/videos/uae.mp4" />
+          <BigPlayButton position="center" />
+        </Player>
       </Container>
-      {/*map */}
+      <div>map</div>
     </Box>
   );
 }

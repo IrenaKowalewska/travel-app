@@ -12,6 +12,21 @@ code {
     monospace;
 }
 
+.video-react-poster {
+  background-size: cover !important;
+  position: relative;
+}
+.video-react-poster::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:rgba(25, 105, 67, 0.2);
+}
+.video-react:hover .video-react-poster::before{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
 .video-react .video-react-big-play-button.video-react-big-play-button-center {
   position: absolute;
   border: 2px solid #196943;
@@ -21,7 +36,7 @@ code {
   height: 1.6em;
   border-radius: 50%;
   color: #196943;
-  background-color: #e1fafe;
+  background-color: #9bd9e2;
 }
 .video-react:hover
   .video-react-big-play-button.video-react-big-play-button-center,
@@ -32,7 +47,6 @@ code {
   background-color: #196943;
   border-radius: 50%;
 }
-.video-react-video:focus{
+.video-react-video:focus {
   outline: none;
 }
-
