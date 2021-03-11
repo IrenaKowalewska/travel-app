@@ -14,7 +14,7 @@ const homeReducer = (state = initialState, action) => {
     case INITIALIZE_HOME_PAGE:
       return { ...state, ...action.payload };
     case IS_LOADING:
-      return { ...state, isLoaded: action.payload };
+      return { ...state, isLoading: action.payload };
 
     default:
       return state;

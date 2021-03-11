@@ -19,7 +19,7 @@ const theme = createMuiTheme({
     },
     secondary: {
       light: '#ffff', //фон карточки
-      main: '#f44336',
+      main: '#196943', // для виджетов
       //   dark: '#ba000d',
       //   contrastText: '#000',
     },
