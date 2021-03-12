@@ -22,14 +22,31 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Page() {
+function Country({
+  url,
+  country,
+  capital,
+  countryImg,
+  population,
+  religion,
+  language,
+  currency,
+}) {
   const classes = useStyles();
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
         <div className={classes.info}>
           <div className={classes.info_left}>
-            <CountryPageInfo />
+            <CountryPageInfo
+              country={country}
+              capital={capital}
+              countryImg={countryImg}
+              population={population}
+              religion={religion}
+              language={language}
+              currency={currency}
+            />
             <div>slider</div>
           </div>
           <div className={classes.info_right}>
@@ -38,8 +55,8 @@ function Page() {
             <div>1 Руфия (MVR)</div>
           </div>
         </div>
-        <Player playsInline poster="/assets/posters/uae.jpg">
-          <source src="assets/videos/uae.mp4" />
+          <Player playsInline poster={`/assets/posters/${url}.jpg`}>
+          <source src={`assets/videos/${url}.mp4`} />
           <BigPlayButton position="center" />
         </Player>
       </Container>
@@ -48,4 +65,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Country;

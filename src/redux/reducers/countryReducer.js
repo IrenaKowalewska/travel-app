@@ -1,4 +1,4 @@
-const INITIALIZE_COUNTRY_PAGE = 'countryReducer/INITIALIZE_HOME_PAGE';
+const INITIALIZE_COUNTRY_PAGE = 'countryReducer/INITIALIZE_COUNTRY_PAGE';
 
 const initialState = {
   countryInfo: [],

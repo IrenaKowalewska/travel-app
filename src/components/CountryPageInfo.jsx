@@ -10,9 +10,9 @@ const useStyles = makeStyles((theme) => ({
     width: '90%',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
-       margin: '0',
+      margin: '0',
     },
-    margin: '2rem 0.5rem',
+    margin: '2rem 0.5rem 2rem 0',
     boxShadow: 'none',
   },
   title: {
@@ -26,28 +26,25 @@ const useStyles = makeStyles((theme) => ({
   bold: {
     fontWeight: 600,
   },
-  text: {
-    margin: '1.5rem 0',
-    [theme.breakpoints.down('xs')]: {
-      margin: '1rem 0 0',
-    },
-  },
 }));
 
-// function CountryPageInfo({country, capital, countryImg}) {
-function CountryPageInfo() {
+function CountryPageInfo({
+  country,
+  capital,
+  countryImg,
+  population,
+  religion,
+  language,
+  currency,
+}) {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
       <CardMedia
         component="img"
-        // alt={`${country} image`}
-        alt="image"
-        // height="20%"
-        // image={`assets/countryImg/${countryImg}`}
-        image={`assets/countryImg/egypt.jpg`}
-        // title={`${country} image`}
+        alt={`${country} image`}
+        image={`assets/countryImg/${countryImg}`}
       />
       <CardContent>
         <Typography
@@ -55,28 +52,22 @@ function CountryPageInfo() {
           color="textPrimary"
           component="h2"
         >
-          Мальдивская Республика
+         {country}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Столица — Мале
+          Столица — {capital}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Население — 402 тысячи человек
+          Население — {population}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Религия — ислам
+          Религия — {religion}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Официальный язык — дивехи
+          Официальный язык — {language}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Валюта – мальдивская руфия
-        </Typography>
-        <Typography className={classes.text} color="textPrimary" component="p">
-          Это одно из самых красивых мест планеты с отлично организованной
-          инфраструктурой. Основное развлечение здесь - дайвинг. Также райские
-          острова предлагают туристам посмотреть огромное количество
-          архитектурных и исторических памятников.
+          Валюта – {currency}
         </Typography>
       </CardContent>
     </Card>

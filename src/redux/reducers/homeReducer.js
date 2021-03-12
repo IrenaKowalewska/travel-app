@@ -46,7 +46,11 @@ export const initializeApp = (lang) => async (dispatch) => {
       country: item.country,
       capital: item.capital,
       countryImg: item.countryImg,
-      url: item.url,
+      population: item.population,
+      religion: item.religion,
+      language: item.language,
+      currency: item.currency,
+      url: item.url
     }));
     dispatch(initializeHomePage({ allCountriesInfo }));
     dispatch(initializeCountryPage({ countryInfo }));

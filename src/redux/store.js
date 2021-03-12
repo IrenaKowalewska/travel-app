@@ -4,7 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 
 import homeReducer from '../redux/reducers/homeReducer';
-import countryReducer from '../redux/reducers/homeReducer';
+import countryReducer from '../redux/reducers/countryReducer';
 
 const reducers = combineReducers({
   homeReducer,
