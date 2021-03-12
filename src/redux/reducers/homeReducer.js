@@ -1,4 +1,5 @@
 import { fetchCountriesAPI } from '../../api/api';
+import { initializeCountryPage } from './countryReducer';
 
 const INITIALIZE_HOME_PAGE = 'homeReducer/INITIALIZE_HOME_PAGE';
 const IS_LOADING = 'homeReducer/IS_LOADING';
@@ -66,12 +67,19 @@ export const initializeApp = (lang) => async (dispatch) => {
       countryImg: item.countryImg,
       url: item.url,
     }));
-    dispatch(
-      initializeHomePage({
-        allCountriesInfo,
-        filteredAllCountriesInfo: allCountriesInfo,
-      }),
-    );
+
+    const countryInfo = response.data.countries.map((item) => ({
+      country: item.country,
+      capital: item.capital,
+      countryImg: item.countryImg,
+      population: item.population,
+      religion: item.religion,
+      language: item.language,
+      currency: item.currency,
+      url: item.url
+    }));
+    dispatch(initializeHomePage({ allCountriesInfo, filteredAllCountriesInfo: allCountriesInfo, }));
+    dispatch(initializeCountryPage({ countryInfo }));
   } catch (error) {
     console.error(error);
   }

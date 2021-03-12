@@ -31,9 +31,7 @@ const style = {
   },
 };
 
-function Home({
-  allCountriesInfo,
-}) {
+function Home({ allCountriesInfo }) {
   const classes = useStyles();
   return (
     <Box bgcolor="primary.main">
@@ -41,7 +39,12 @@ function Home({
      {allCountriesInfo.length>0 && <Container className={classes.cards}>
         {allCountriesInfo &&
           allCountriesInfo.map((item) => (
-            <NavLink key={item.url} exact to={`/${item.url}`} style={style.link}>
+            <NavLink
+              key={item.url}
+              exact
+              to={`/${item.url}`}
+              style={style.link}
+            >
               <ImageCard
                 country={item.country}
                 capital={item.capital}
