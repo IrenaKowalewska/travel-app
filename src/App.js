@@ -14,7 +14,7 @@ import { Box } from '@material-ui/core';
 function App() {
   const dispatch = useDispatch();
   const { allCountriesInfo, lang, isLoading } = useSelector((state) => ({
-    allCountriesInfo: state.homeReducer.allCountriesInfo,
+    allCountriesInfo: state.homeReducer.filteredAllCountriesInfo,
     lang: state.homeReducer.lang,
     isLoading: state.homeReducer.isLoading,
   }));
@@ -39,7 +39,7 @@ function App() {
         </Box>
       ) : (<div>
         <CssBaseline />
-      <Header />
+      <Header lang={lang} />
         <Switch>
           <Route
             path="/"

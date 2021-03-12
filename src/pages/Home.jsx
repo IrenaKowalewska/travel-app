@@ -38,7 +38,7 @@ function Home({
   return (
     <Box bgcolor="primary.main">
       <Box className={classes.background}></Box>
-      <Container className={classes.cards}>
+     {allCountriesInfo.length>0 && <Container className={classes.cards}>
         {allCountriesInfo &&
           allCountriesInfo.map((item) => (
             <NavLink key={item.url} exact to={`/${item.url}`} style={style.link}>
@@ -49,7 +49,7 @@ function Home({
               />
             </NavLink>
           ))}
-      </Container>
+      </Container>}
     </Box>
   );
 }
