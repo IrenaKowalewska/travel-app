@@ -13,9 +13,10 @@ import { Box } from '@material-ui/core';
 
 function App() {
   const dispatch = useDispatch();
+
   const { allCountriesInfo, lang, isLoading, countryInfo } = useSelector(
     (state) => ({
-      allCountriesInfo: state.homeReducer.allCountriesInfo,
+      allCountriesInfo: state.homeReducer.filteredAllCountriesInfo,
       lang: state.homeReducer.lang,
       isLoading: state.homeReducer.isLoading,
       countryInfo: state.countryReducer.countryInfo,
@@ -40,10 +41,11 @@ function App() {
         >
           <CircularProgress color="secondary" />
         </Box>
+
       ) : (
         <div>
           <CssBaseline />
-          <Header />
+          <Header lang={lang}/>
           <Switch>
             <Route
               path="/"
@@ -74,6 +76,7 @@ function App() {
           </Switch>
           <Footer />
         </div>
+
       )}
     </div>
   );

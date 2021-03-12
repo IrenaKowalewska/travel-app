@@ -36,7 +36,7 @@ function Home({ allCountriesInfo }) {
   return (
     <Box bgcolor="primary.main">
       <Box className={classes.background}></Box>
-      <Container className={classes.cards}>
+     {allCountriesInfo.length>0 && <Container className={classes.cards}>
         {allCountriesInfo &&
           allCountriesInfo.map((item) => (
             <NavLink
@@ -52,7 +52,7 @@ function Home({ allCountriesInfo }) {
               />
             </NavLink>
           ))}
-      </Container>
+      </Container>}
     </Box>
   );
 }
