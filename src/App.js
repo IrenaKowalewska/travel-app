@@ -13,17 +13,20 @@ import { Box } from '@material-ui/core';
 
 function App() {
   const dispatch = useDispatch();
-  const { allCountriesInfo, lang, isLoading } = useSelector((state) => ({
-    allCountriesInfo: state.homeReducer.allCountriesInfo,
-    lang: state.homeReducer.lang,
-    isLoading: state.homeReducer.isLoading,
-  }));
+  const { allCountriesInfo, lang, isLoading, countryInfo } = useSelector(
+    (state) => ({
+      allCountriesInfo: state.homeReducer.allCountriesInfo,
+      lang: state.homeReducer.lang,
+      isLoading: state.homeReducer.isLoading,
+      countryInfo: state.countryReducer.countryInfo,
+    }),
+  );
   React.useEffect(() => {
     dispatch(initializeApp(lang));
   }, [dispatch, lang]);
+
   return (
     <div className="App">
-      
       {isLoading ? (
         <Box
           top={0}
@@ -37,21 +40,41 @@ function App() {
         >
           <CircularProgress color="secondary" />
         </Box>
-      ) : (<div>
-        <CssBaseline />
-      <Header />
-        <Switch>
-          <Route
-            path="/"
-            exact
-            render={() => <Home allCountriesInfo={allCountriesInfo} />}
-          />
-          <Route path="/country" exact component={Country} />
-          <Route path="*" component={NotFound} />
-        </Switch>
-        <Footer /></div>
+      ) : (
+        <div>
+          <CssBaseline />
+          <Header />
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={() => <Home allCountriesInfo={allCountriesInfo} />}
+            />
+            {countryInfo &&
+              countryInfo.map((countryItem) => (
+                <Route
+                  key={countryItem.url}
+                  path={`/${countryItem.url}`}
+                  exact
+                  render={() => (
+                    <Country
+                      url={countryItem.url}
+                      country={countryItem.country}
+                      capital={countryItem.capital}
+                      countryImg={countryItem.countryImg}
+                      population={countryItem.population}
+                      religion={countryItem.religion}
+                      language={countryItem.language}
+                      currency={countryItem.currency}
+                    />
+                  )}
+                />
+              ))}
+            <Route path="*" component={NotFound} />
+          </Switch>
+          <Footer />
+        </div>
       )}
-      
     </div>
   );
 }

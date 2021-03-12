@@ -8,10 +8,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    // width: 255,
     width: 350,
     [theme.breakpoints.down('xs')]: {
-      width: '80%',
+      width: 280,
     },
     margin: '2rem 0.5rem',
     [theme.breakpoints.between('lg', 'sm')]: {
@@ -39,7 +38,6 @@ function ImageCard({country, capital, countryImg}) {
             alt={`${country} image`}
             height="140"
             image={`assets/countryImg/${countryImg}`}
-            title={`${country} image`}
           />
           <CardContent>
             <Typography
