@@ -39,7 +39,7 @@ function ImageCard({country, capital, countryImg}) {
             alt={`${country} image`}
             height="140"
             image={`assets/countryImg/${countryImg}`}
-            title={`${country} image`}
+            // title={`${country} image`}
           />
           <CardContent>
             <Typography

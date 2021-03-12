@@ -4,10 +4,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 
 import homeReducer from '../redux/reducers/homeReducer';
+import countryReducer from '../redux/reducers/homeReducer';
 
 const reducers = combineReducers({
   homeReducer,
-  // countryReducer,
+  countryReducer,
 });
 
 const store = createStore(
