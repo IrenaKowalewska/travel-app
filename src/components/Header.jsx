@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import Logo from './Logo';
 import Search from './Search';
 import Language from './Language';
+import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   flex: {
@@ -17,12 +18,13 @@ const useStyles = makeStyles((theme) => ({
 
 function Header() {
   const classes = useStyles();
+  const { pathname } = useLocation();
 
   return (
     <Box bgcolor="primary.dark">
       <Container className={classes.flex}>
        <Logo/>
-       <Search/>
+      {pathname==='/' && <Search/>}
        <Language/>
       </Container>
     </Box>
