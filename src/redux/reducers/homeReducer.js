@@ -5,10 +5,11 @@ const INITIALIZE_HOME_PAGE = 'homeReducer/INITIALIZE_HOME_PAGE';
 const IS_LOADING = 'homeReducer/IS_LOADING';
 const SEARCH_FILTER = 'homeReducer/SEARCH_FILTER';
 const RESET_FILTER = 'homeReducer/RESET_FILTER';
+const CURRENT_LANGUAGE = 'homeReducer/CURRENT_LANGUAGE';
 
 const initialState = {
   allCountriesInfo: [],
-  lang: 'ru',
+  lang: '',
   isLoading: false,
   filteredAllCountriesInfo: [],
 };
@@ -35,6 +36,8 @@ const homeReducer = (state = initialState, action) => {
         ...state,
         filteredAllCountriesInfo: [...state.allCountriesInfo],
       };
+      case CURRENT_LANGUAGE:
+        return { ...state, lang: action.payload };
 
     default:
       return state;
@@ -56,6 +59,10 @@ export const searchFilter = (text) => ({
 export const resetFilter = () => ({
   type: RESET_FILTER,
 });
+export const setCurrentLanguage = (lang) => ({
+  type: CURRENT_LANGUAGE,
+  payload: lang,
+});
 
 export const initializeApp = (lang) => async (dispatch) => {
   dispatch(isLoading(true));
@@ -76,7 +83,9 @@ export const initializeApp = (lang) => async (dispatch) => {
       religion: item.religion,
       language: item.language,
       currency: item.currency,
-      url: item.url
+      url: item.url,
+      lat: item.lat,
+      lng: item.lng
     }));
     dispatch(initializeHomePage({ allCountriesInfo, filteredAllCountriesInfo: allCountriesInfo, }));
     dispatch(initializeCountryPage({ countryInfo }));
