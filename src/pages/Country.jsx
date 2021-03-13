@@ -35,8 +35,7 @@ function Country({
   lng
 }) {
   const classes = useStyles();
-  console.log('lat',lat);
-  console.log('lng',lng);
+
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
