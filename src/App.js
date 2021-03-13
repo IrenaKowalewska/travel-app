@@ -35,7 +35,7 @@ function App() {
       window.localStorage.setItem('lang', 'ru');
       dispatch(setCurrentLanguage('ru'));
     }
-  }, []);
+  }, [dispatch]);
   React.useEffect(() => {
       window.localStorage.setItem('lang', lang);
   }, [dispatch,lang]);

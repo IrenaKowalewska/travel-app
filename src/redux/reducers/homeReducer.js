@@ -9,7 +9,7 @@ const CURRENT_LANGUAGE = 'homeReducer/CURRENT_LANGUAGE';
 
 const initialState = {
   allCountriesInfo: [],
-  lang: '',
+  lang: 'ru',
   isLoading: false,
   filteredAllCountriesInfo: [],
 };

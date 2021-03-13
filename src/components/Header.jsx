@@ -21,7 +21,7 @@ function Header({ lang }) {
     <Box bgcolor="primary.dark">
       <Container className={classes.flex}>
        <Logo/>
-       <Search/>
+       <Search lang={lang}/>
        <Language lang={lang}/>
       </Container>
     </Box>

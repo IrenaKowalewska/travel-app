@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Search() {
+function Search({ lang }) {
   const classes = useStyles();
 
   const dispatch = useDispatch();
@@ -51,7 +51,13 @@ function Search() {
     >
       <InputBase
         className={classes.input}
-        placeholder="Введите страну"
+        placeholder={
+          lang === 'ru'
+            ? 'Введите страну'
+            : lang === 'en'
+            ? 'Enter country'
+            : 'Wprowadź kraj'
+        }
         autoFocus
         value={searchValue}
         onChange={handlerInputOnChange}
