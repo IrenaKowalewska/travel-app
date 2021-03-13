@@ -3,6 +3,7 @@
     {
       "country": "Турция", 
       "capital":"Анкара", 
+      "url": "turkey",
       "population": "78.7 млн. человек", 
       "religion": "ислам", 
       "language": "турецкий", 
@@ -47,6 +48,7 @@
     {
       "country": "Греция", 
       "capital":"Афины", 
+      "url": "greece",
       "population": "10.8 млн. человек", 
       "religion": "православие", 
       "language": "греческий", 
@@ -91,6 +93,7 @@
     {
       "country": "Испания", 
       "capital":"Мадрид", 
+      "url": "spain",
       "population": "45.7 млн. человек", 
       "religion": "католицизм", 
       "language": "испанский", 
@@ -135,6 +138,7 @@
     {
       "country": "Италия", 
       "capital":"Рим", 
+      "url": "italy",
       "population": "60.6 млн. человек", 
       "religion": "католицизм", 
       "language": "итальянский", 
@@ -179,6 +183,7 @@
     {
       "country": "Шри-Ланка", 
       "capital":"Шри-Джаява́рденепура-Ко́тте", 
+      "url": "sri-lanka",
       "population": "21.3 млн. человек", 
       "religion": "буддизм", 
       "language": "сингальский и тамильский", 
@@ -223,6 +228,7 @@
     {
       "country": "Объединённые Арабские Эмираты", 
       "capital":"Абу-Даби", 
+      "url": "uae",
       "population": "9.3 млн. человек", 
       "religion": "ислам", 
       "language": "арабский", 
@@ -267,6 +273,7 @@
     {
       "country": "Египет", 
       "capital":"Каир", 
+      "url": "egypt",
       "population": "100 млн. человек", 
       "religion": "ислам", 
       "language": "арабский", 
@@ -311,6 +318,7 @@
     {
       "country": "Черногория", 
       "capital":"Подгорица", 
+      "url": "montenegro",
       "population": "622 тыс. человек", 
       "religion": "православие", 
       "language": "черногорский", 

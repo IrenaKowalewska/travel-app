@@ -2,6 +2,7 @@
   "countries": [
     {"country": "Turkey", 
       "capital":"Ankara", 
+      "url": "turkey",
       "population": "78.7 mln. inhabitants", 
       "religion": "islam", 
       "language": "turkish", 
@@ -45,6 +46,7 @@
     {
       "country": "Greece", 
       "capital":"Athens", 
+      "url": "greece",
       "population": "10.8 mln. inhabitants", 
       "religion": "Eastern Orthodoxy", 
       "language": "Greek", 
@@ -89,6 +91,7 @@
     {
       "country": "Spain", 
       "capital":"Madrid", 
+      "url": "spain",
       "population": "45.7 mln. inhabitants", 
       "religion": "Roman Catholic", 
       "language": "Spanish", 
@@ -133,6 +136,7 @@
     {
       "country": "Italy", 
       "capital":"Rome", 
+      "url": "italy",
       "population": "60.6 mln. inhabitants", 
       "religion": "Roman Catholic", 
       "language": "Italian", 
@@ -177,6 +181,7 @@
       "country": "Sri Lanka", 
       "capital":"Sri Jayawardenepura Kotte", 
       "population": "21.3 mln. inhabitants", 
+      "url": "sri-lanka",
       "religion": "буддизм", 
       "language": "Sinhala, Tamil", 
       "currency": "Sri Lankan rupee", 
@@ -220,6 +225,7 @@
     {
       "country": "United Arab Emirates", 
       "capital":"Abu Dhabi", 
+      "url": "uae",
       "population": "9.3 mln. inhabitants", 
       "religion": "Islam", 
       "language": "Arabic", 
@@ -264,6 +270,7 @@
     {
       "country": "Egypt", 
       "capital":"Cairo", 
+      "url": "egypt",
       "population": "100 mln. inhabitants", 
       "religion": "Islam", 
       "language": "Arabic", 
@@ -308,6 +315,7 @@
     {
       "country": "Montenegro", 
       "capital":"Podgorica", 
+      "url": "montenegro",
       "population": "621 873 inhabitants", 
       "religion": "Eastern Orthodoxy", 
       "language": "Montenegrin", 
