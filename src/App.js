@@ -8,11 +8,13 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Country from './pages/Country';
 import { useDispatch, useSelector } from 'react-redux';
-import { initializeApp } from './redux/reducers/homeReducer';
+import { initializeApp, setCurrentLanguage } from './redux/reducers/homeReducer';
 import { Box } from '@material-ui/core';
 
 function App() {
   const dispatch = useDispatch();
+
+  
 
   const { allCountriesInfo, lang, isLoading, countryInfo } = useSelector(
     (state) => ({
@@ -25,6 +27,18 @@ function App() {
   React.useEffect(() => {
     dispatch(initializeApp(lang));
   }, [dispatch, lang]);
+
+  React.useEffect(() => {
+    if (window.localStorage.getItem('lang') !== null) {
+      dispatch(setCurrentLanguage(localStorage.getItem('lang')))
+    } else {
+      window.localStorage.setItem('lang', 'ru');
+      dispatch(setCurrentLanguage('ru'));
+    }
+  }, []);
+  React.useEffect(() => {
+      window.localStorage.setItem('lang', lang);
+  }, [dispatch,lang]);
 
   return (
     <div className="App">
@@ -41,11 +55,10 @@ function App() {
         >
           <CircularProgress color="secondary" />
         </Box>
-
       ) : (
         <div>
           <CssBaseline />
-          <Header lang={lang}/>
+          <Header lang={lang} />
           <Switch>
             <Route
               path="/"
@@ -68,6 +81,8 @@ function App() {
                       religion={countryItem.religion}
                       language={countryItem.language}
                       currency={countryItem.currency}
+                      lat={countryItem.lat}
+                      lng={countryItem.lng}
                     />
                   )}
                 />
@@ -76,7 +91,6 @@ function App() {
           </Switch>
           <Footer />
         </div>
-
       )}
     </div>
   );
