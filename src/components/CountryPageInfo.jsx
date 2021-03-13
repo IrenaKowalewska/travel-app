@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import { LangContext } from '../App';
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -38,6 +39,7 @@ function CountryPageInfo({
   currency,
 }) {
   const classes = useStyles();
+  const lang = React.useContext(LangContext);
 
   return (
     <Card className={classes.card}>
@@ -55,19 +57,39 @@ function CountryPageInfo({
          {country}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Столица — {capital}
+        {lang === 'ru'
+            ? 'Столица'
+            : lang === 'en'
+            ? 'Capital'
+            : 'Kapitał'} — {capital}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Население — {population}
+        {lang === 'ru'
+            ? 'Население'
+            : lang === 'en'
+            ? 'Population'
+            : 'Populacja'} — {population}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Религия — {religion}
+          {lang === 'ru'
+            ? 'Религия'
+            : lang === 'en'
+            ? 'Religion'
+            : 'Religia'} — {religion}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Официальный язык — {language}
+          {lang === 'ru'
+            ? 'Официальный язык'
+            : lang === 'en'
+            ? 'Official language'
+            : 'Oficjalny język'} — {language}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          Валюта – {currency}
+          {lang === 'ru'
+            ? 'Валюта'
+            : lang === 'en'
+            ? 'Currency'
+            : 'Waluta'} – {currency}
         </Typography>
       </CardContent>
     </Card>

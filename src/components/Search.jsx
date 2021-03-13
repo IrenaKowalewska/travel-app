@@ -5,6 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
 import { useDispatch } from 'react-redux';
 import { searchFilter, resetFilter } from '../redux/reducers/homeReducer';
+import { LangContext } from '../App';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,9 +22,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Search({ lang }) {
+function Search() {
   const classes = useStyles();
-
+  const lang = React.useContext(LangContext);
   const dispatch = useDispatch();
 
   const [searchValue, setSearchValue] = React.useState('');

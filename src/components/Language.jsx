@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { FormControl, MenuItem, Select } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { setCurrentLanguage } from '../redux/reducers/homeReducer';
+import { LangContext } from '../App';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -11,8 +12,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Language({ lang }) {
+function Language() {
   const classes = useStyles();
+  const lang = React.useContext(LangContext);
 
   const dispatch = useDispatch();
 

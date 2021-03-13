@@ -15,14 +15,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Header({ lang }) {
+function Header() {
   const classes = useStyles();
+
   return (
     <Box bgcolor="primary.dark">
       <Container className={classes.flex}>
        <Logo/>
-       <Search lang={lang}/>
-       <Language lang={lang}/>
+       <Search/>
+       <Language/>
       </Container>
     </Box>
   );
