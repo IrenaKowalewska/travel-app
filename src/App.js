@@ -27,6 +27,7 @@ function App() {
       countryInfo: state.countryReducer.countryInfo,
     }),
   );
+ 
   React.useEffect(() => {
     dispatch(initializeApp(lang));
   }, [dispatch, lang]);
