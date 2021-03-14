@@ -8,7 +8,6 @@ const Weather = ({id}) => {
         fetch(`http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=f3416cd6137a98304fe1bc4a4fec55ff`)
                 .then(res => res.json())
                 .then(res => {
-                    console.log(res)
                     setWeather(res);
                     setLoading(false);
                 })
