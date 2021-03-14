@@ -50,3 +50,27 @@ code {
 .video-react-video:focus {
   outline: none;
 }
+
+.weather-block {
+  margin: 2rem auto;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: rgb(25, 105, 67, 0.1);
+  max-width: 190px;
+}
+.weather-temp {
+  display: flex;
+  align-items: center;
+}
+
+.temp {
+  color: #196943;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.temp-descr {
+  color: #196943;
+  font-size: 16px;
+  font-weight: 700;
+}

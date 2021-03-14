@@ -3,8 +3,12 @@ import Container from '@material-ui/core/Container';
 import { Box, makeStyles } from '@material-ui/core';
 import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
+
+import { Weather } from '../components/Weather';
+
 import Maps from '../components/Maps';
 import DateWidget from '../components/DateWidget';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +42,7 @@ function Country({
   timeZone,
 }) {
   const classes = useStyles();
-  
+
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
@@ -56,7 +60,12 @@ function Country({
             <div>slider</div>
           </div>
           <div className={classes.info_right}>
-            <div>weather weatherweatherweather</div>
+
+            <div>
+              <Weather 
+                country={url}
+              />
+            </div>
             <DateWidget url={url} timeZone={timeZone} />
             <div>1 Руфия (MVR)</div>
           </div>

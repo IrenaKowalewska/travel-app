@@ -25,6 +25,7 @@ function App() {
       lang: state.homeReducer.lang,
       isLoading: state.homeReducer.isLoading,
       countryInfo: state.countryReducer.countryInfo,
+      wether: state.countryReducer.countryInfo,
     }),
   );
  
