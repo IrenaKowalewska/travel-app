@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { LangContext } from '../App';
 
@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
 function DateWidget({ url }) {
   const classes = useStyles();
   const lang = React.useContext(LangContext);
+ 
   let timeZone = '';
   switch (url) {
     case 'turkey':
@@ -38,7 +39,7 @@ function DateWidget({ url }) {
     default:
       timeZone = 'Europe/Podgorica'; // Montenegro Podgorica
   }
-  const options = {
+  const options = useMemo(()=>({
     day: 'numeric',
     month: 'long',
     weekday: 'long',
@@ -46,14 +47,21 @@ function DateWidget({ url }) {
     minute: 'numeric',
     second: 'numeric',
     timeZone: timeZone,
-  };
-  const today = new Date();
-  const currentDate = today.toLocaleString(lang, options);
+  }),[timeZone]);
+ 
+  const [currentDate,setCurrentDate] = React.useState(new Date().toLocaleString(lang, options))
+console.log('date')
+  React.useEffect(() => {
+    const interval = setTimeout(() => {
+       setCurrentDate(new Date().toLocaleString(lang, options));
+    }, 1000);
+    return ()=>{clearTimeout(interval)}
+  },[currentDate,lang, options]);
 
   return (
-      <Typography className={classes.bold} color="textPrimary" component="h2">
-        {currentDate}
-      </Typography>
+    <Typography className={classes.bold} color="textPrimary" component="h2">
+      {currentDate}
+    </Typography>
   );
 }
 

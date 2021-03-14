@@ -36,7 +36,7 @@ function Country({
   lng,
 }) {
   const classes = useStyles();
-  
+  console.log(country)
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
