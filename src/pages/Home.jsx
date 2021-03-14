@@ -36,23 +36,25 @@ function Home({ allCountriesInfo }) {
   return (
     <Box bgcolor="primary.main">
       <Box className={classes.background}></Box>
-     {allCountriesInfo.length>0 && <Container className={classes.cards}>
-        {allCountriesInfo &&
-          allCountriesInfo.map((item) => (
-            <NavLink
-              key={item.url}
-              exact
-              to={`/${item.url}`}
-              style={style.link}
-            >
-              <ImageCard
-                country={item.country}
-                capital={item.capital}
-                countryImg={item.countryImg}
-              />
-            </NavLink>
-          ))}
-      </Container>}
+      {allCountriesInfo.length > 0 && (
+        <Container className={classes.cards}>
+          {allCountriesInfo &&
+            allCountriesInfo.map((item) => (
+              <NavLink
+                key={item.url}
+                exact
+                to={`/${item.url}`}
+                style={style.link}
+              >
+                <ImageCard
+                  country={item.country}
+                  capital={item.capital}
+                  countryImg={item.countryImg}
+                />
+              </NavLink>
+            ))}
+        </Container>
+      )}
     </Box>
   );
 }

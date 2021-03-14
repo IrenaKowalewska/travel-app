@@ -28,6 +28,7 @@ function App() {
       wether: state.countryReducer.countryInfo,
     }),
   );
+ 
   React.useEffect(() => {
     dispatch(initializeApp(lang));
   }, [dispatch, lang]);
@@ -87,6 +88,7 @@ function App() {
                         currency={countryItem.currency}
                         lat={countryItem.lat}
                         lng={countryItem.lng}
+                        timeZone={countryItem.timeZone}
                       />
                     )}
                   />
