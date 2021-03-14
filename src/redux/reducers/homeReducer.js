@@ -85,7 +85,7 @@ export const initializeApp = (lang) => async (dispatch) => {
       currency: item.currency,
       url: item.url,
       lat: item.lat,
-      lng: item.lng
+      lng: item.lng,
     }));
     dispatch(initializeHomePage({ allCountriesInfo, filteredAllCountriesInfo: allCountriesInfo, }));
     dispatch(initializeCountryPage({ countryInfo }));

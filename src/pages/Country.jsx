@@ -36,7 +36,6 @@ function Country({
   lng
 }) {
   const classes = useStyles();
-
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
@@ -54,7 +53,11 @@ function Country({
             <div>slider</div>
           </div>
           <div className={classes.info_right}>
-            <div><Weather country={url}/></div>
+            <div>
+              <Weather 
+                country={url}
+              />
+            </div>
             <div>5 марта 2021</div>
             <div>1 Руфия (MVR)</div>
           </div>
