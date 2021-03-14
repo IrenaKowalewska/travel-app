@@ -5,6 +5,7 @@ import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
 
 import { Weather } from '../components/Weather';
+import{ Currency } from '../components/Currency';
 
 import Maps from '../components/Maps';
 import DateWidget from '../components/DateWidget';
@@ -40,6 +41,7 @@ function Country({
   lat,
   lng,
   id,
+  currencyCode,
   timeZone,
 }) {
   const classes = useStyles();
@@ -67,7 +69,13 @@ function Country({
               />
             </div>
             <DateWidget url={url} timeZone={timeZone} />
-            <div>1 Руфия (MVR)</div>
+            <div>
+              <Currency 
+                code={currencyCode}
+                currencyName={currency}
+              />
+            {/* 8ed0e057e6cb73e8e4e8f6b9 */}
+            </div>
           </div>
         </div>
         <Player playsInline poster={`/assets/posters/${url}.jpg`}>
