@@ -87,6 +87,7 @@ function App() {
                         currency={countryItem.currency}
                         lat={countryItem.lat}
                         lng={countryItem.lng}
+                        timeZone={countryItem.timeZone}
                       />
                     )}
                   />

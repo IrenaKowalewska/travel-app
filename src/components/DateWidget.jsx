@@ -8,55 +8,35 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function DateWidget({ url }) {
+function DateWidget({ url, timeZone }) {
   const classes = useStyles();
   const lang = React.useContext(LangContext);
- 
-  let timeZone = '';
-  switch (url) {
-    case 'turkey':
-      timeZone = 'Europe/Istanbul';
-      break; // Turkey Ankara
-    case 'greece':
-      timeZone = 'Europe/Athens';
-      break; // Greece Athens
-    case 'spain':
-      timeZone = 'Europe/Madrid';
-      break; // Spain Madrid
-    case 'italy':
-      timeZone = 'Europe/Rome';
-      break; // Italy Rome
-    case 'sri-lanka':
-      timeZone = 'Asia/Colombo';
-      break; // Sri Lanka Sri Jayawardenepura Kotte
-    case 'uae':
-      timeZone = 'Asia/Dubai';
-      break; // United Arab Emirates Abu Dhabi
-    case 'egypt':
-      timeZone = 'Africa/Cairo';
-      break; // Egypt Cairo
 
-    default:
-      timeZone = 'Europe/Podgorica'; // Montenegro Podgorica
-  }
-  const options = useMemo(()=>({
-    day: 'numeric',
-    month: 'long',
-    weekday: 'long',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    timeZone: timeZone,
-  }),[timeZone]);
- 
-  const [currentDate,setCurrentDate] = React.useState(new Date().toLocaleString(lang, options))
-console.log('date')
+  const options = useMemo(
+    () => ({
+      day: 'numeric',
+      month: 'long',
+      weekday: 'long',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      timeZone: timeZone,
+    }),
+    [timeZone],
+  );
+
+  const [currentDate, setCurrentDate] = React.useState(
+    new Date().toLocaleString(lang, options),
+  );
+
   React.useEffect(() => {
     const interval = setTimeout(() => {
-       setCurrentDate(new Date().toLocaleString(lang, options));
+      setCurrentDate(new Date().toLocaleString(lang, options));
     }, 1000);
-    return ()=>{clearTimeout(interval)}
-  },[currentDate,lang, options]);
+    return () => {
+      clearTimeout(interval);
+    };
+  }, [currentDate, lang, options]);
 
   return (
     <Typography className={classes.bold} color="textPrimary" component="h2">
