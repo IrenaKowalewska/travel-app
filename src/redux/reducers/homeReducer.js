@@ -36,8 +36,8 @@ const homeReducer = (state = initialState, action) => {
         ...state,
         filteredAllCountriesInfo: [...state.allCountriesInfo],
       };
-      case CURRENT_LANGUAGE:
-        return { ...state, lang: action.payload };
+    case CURRENT_LANGUAGE:
+      return { ...state, lang: action.payload };
 
     default:
       return state;
@@ -64,6 +64,33 @@ export const setCurrentLanguage = (lang) => ({
   payload: lang,
 });
 
+const setTimeZone = (url) => {
+  switch (url) {
+    case 'turkey': // Turkey Ankara
+      return 'Europe/Istanbul';
+
+    case 'greece': // Greece Athens
+      return 'Europe/Athens';
+
+    case 'spain': // Spain Madrid
+      return 'Europe/Madrid';
+
+    case 'italy': // Italy Rome
+      return 'Europe/Rome';
+
+    case 'sri-lanka': // Sri Lanka Sri Jayawardenepura Kotte
+      return 'Asia/Colombo';
+
+    case 'uae': // United Arab Emirates Abu Dhabi
+      return 'Asia/Dubai';
+
+    case 'egypt': // Egypt Cairo
+      return 'Africa/Cairo';
+
+    default:
+      return 'Europe/Podgorica'; // Montenegro Podgorica
+  }
+};
 export const initializeApp = (lang) => async (dispatch) => {
   dispatch(isLoading(true));
   try {
@@ -74,7 +101,6 @@ export const initializeApp = (lang) => async (dispatch) => {
       countryImg: item.countryImg,
       url: item.url,
     }));
-
     const countryInfo = response.data.countries.map((item) => ({
       country: item.country,
       capital: item.capital,
@@ -85,9 +111,15 @@ export const initializeApp = (lang) => async (dispatch) => {
       currency: item.currency,
       url: item.url,
       lat: item.lat,
-      lng: item.lng
+      lng: item.lng,
+      timeZone: setTimeZone(item.url),
     }));
-    dispatch(initializeHomePage({ allCountriesInfo, filteredAllCountriesInfo: allCountriesInfo, }));
+    dispatch(
+      initializeHomePage({
+        allCountriesInfo,
+        filteredAllCountriesInfo: allCountriesInfo,
+      }),
+    );
     dispatch(initializeCountryPage({ countryInfo }));
   } catch (error) {
     console.error(error);

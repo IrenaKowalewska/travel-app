@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import { Box, makeStyles } from '@material-ui/core';
 import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
+import DateWidget from '../components/DateWidget';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,10 +33,11 @@ function Country({
   language,
   currency,
   lat,
-  lng
+  lng,
+  timeZone,
 }) {
   const classes = useStyles();
-
+  
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
@@ -54,11 +56,11 @@ function Country({
           </div>
           <div className={classes.info_right}>
             <div>weather weatherweatherweather</div>
-            <div>5 марта 2021</div>
+            <DateWidget url={url} timeZone={timeZone} />
             <div>1 Руфия (MVR)</div>
           </div>
         </div>
-          <Player playsInline poster={`/assets/posters/${url}.jpg`}>
+        <Player playsInline poster={`/assets/posters/${url}.jpg`}>
           <source src={`assets/videos/${url}.mp4`} />
           <BigPlayButton position="center" />
         </Player>
