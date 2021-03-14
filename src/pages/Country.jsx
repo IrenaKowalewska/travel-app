@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import { Box, makeStyles } from '@material-ui/core';
 import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
+import Maps from '../components/Maps';
 import DateWidget from '../components/DateWidget';
 
 const useStyles = makeStyles((theme) => ({
@@ -65,7 +66,10 @@ function Country({
           <BigPlayButton position="center" />
         </Player>
       </Container>
-      <div>map</div>
+      <Maps 
+        lat={lat}
+        lng={lng}
+      />
     </Box>
   );
 }
