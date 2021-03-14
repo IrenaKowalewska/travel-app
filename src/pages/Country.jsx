@@ -37,6 +37,7 @@ function Country({
   religion,
   language,
   currency,
+  countryId,
   lat,
   lng,
   timeZone,
@@ -63,7 +64,7 @@ function Country({
 
             <div>
               <Weather 
-                country={url}
+                id={countryId}
               />
             </div>
             <DateWidget url={url} timeZone={timeZone} />
