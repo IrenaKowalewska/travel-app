@@ -39,10 +39,10 @@ function Country({
   currency,
   lat,
   lng,
+  id,
   timeZone,
 }) {
   const classes = useStyles();
-  console.log(url)
   return (
     <Box bgcolor="primary.light">
       <Container className={classes.root}>
@@ -62,9 +62,9 @@ function Country({
           <div className={classes.info_right}>
 
             <div>
-              {/* <Weather 
-                id={countryId}
-              /> */}
+              <Weather 
+                id={id}
+              />
             </div>
             <DateWidget url={url} timeZone={timeZone} />
             <div>1 Руфия (MVR)</div>

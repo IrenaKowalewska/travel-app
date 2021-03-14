@@ -112,6 +112,7 @@ export const initializeApp = (lang) => async (dispatch) => {
       url: item.url,
       lat: item.lat,
       lng: item.lng,
+      id: item.countryId,
       timeZone: setTimeZone(item.url),
     }));
     dispatch(
