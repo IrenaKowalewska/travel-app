@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import { Box, makeStyles } from '@material-ui/core';
 import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
+import { Weather } from '../components/Weather';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,7 +54,7 @@ function Country({
             <div>slider</div>
           </div>
           <div className={classes.info_right}>
-            <div>weather weatherweatherweather</div>
+            <div><Weather country={url}/></div>
             <div>5 марта 2021</div>
             <div>1 Руфия (MVR)</div>
           </div>
