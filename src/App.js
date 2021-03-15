@@ -90,6 +90,7 @@ function App() {
                         lng={countryItem.lng}
                         id={countryItem.id}
                         currencyCode={countryItem.currencyCode}
+                        gallery={countryItem.gallery}
                         timeZone={countryItem.timeZone}
                       />
                     )}

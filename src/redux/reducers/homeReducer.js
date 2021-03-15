@@ -114,6 +114,7 @@ export const initializeApp = (lang) => async (dispatch) => {
       lng: item.lng,
       id: item.countryId,
       currencyCode: item.currencyCode,
+      gallery: item.gallery,
       timeZone: setTimeZone(item.url),
     }));
     dispatch(

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CurrencyItem } from './CurrencyItem';
 
-const Currency = ({code, currencyName }) => {
+function Currency({code, currencyName }) {
     const [currency, setCurrency] = useState({});
     const [loading, setLoading] = useState(true);
     useEffect(() => {

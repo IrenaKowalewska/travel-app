@@ -75,3 +75,17 @@ code {
   font-size: 16px;
   font-weight: 700;
 }
+
+.slider {
+  margin-bottom: 2rem;
+  width: 90%;
+}
+.carousel-caption p,
+.carousel-caption h3 {
+  background-color:rgba(0, 0, 0, 0.5);
+  text-shadow: black 2px 2px 2px;
+}
+
+.carousel-item img {
+  height: 450px;
+}
