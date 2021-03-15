@@ -5,6 +5,7 @@ import { LangContext } from '../App';
 const useStyles = makeStyles((theme) => ({
   bold: {
     fontWeight: 600,
+    fontSize: '1.1rem',
   },
 }));
 

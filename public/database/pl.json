@@ -1,23 +1,25 @@
 {
   "countries": [
-    {"country": "Turcja", 
-      "capital":"Ankara", 
+    {
+      "country": "Turcja",
+      "capital": "Ankara",
       "url": "turkey",
       "countryId": "298795",
       "currencyCode": "TRY",
-      "population": "78.7 mln. osób", 
-      "religion": "Islam", 
-      "language": "turecki", 
-      "currency": "lira turecka", 
-      "lat": "39",
-      "lng": "35",
+      "population": "78.7 mln. osób",
+      "religion": "Islam",
+      "language": "turecki",
+      "currency": "lira turecka",
+      "lat": "39.920756",
+      "lng": "32.854049",
+      "timeZone":"Europe/Istanbul",
       "flag": "https://restcountries.eu/data/tur.svg",
       "countryImg": "turkey.jpg",
       "gallery": [
         {
-          "place": "Pamukkale (Pamukkale)", 
-          "info": "Słynie z wapiennych osadów powstałych na zboczu góry Cökelez. Władze tureckie objęły teren ochroną tworząc w tym miejscu Park Narodowy, który objęło swoim patronatem UNESCO, wpisując go na listę światowego dziedzictwa przyrodniczego. Park Narodowy utworzono w celu ochrony trawertynów.", 
-          "img":  "turkey1.jpg"
+          "place": "Pamukkale (Pamukkale)",
+          "info": "Słynie z wapiennych osadów powstałych na zboczu góry Cökelez. Władze tureckie objęły teren ochroną tworząc w tym miejscu Park Narodowy, który objęło swoim patronatem UNESCO, wpisując go na listę światowego dziedzictwa przyrodniczego. Park Narodowy utworzono w celu ochrony trawertynów.",
+          "img": "turkey1.jpg"
         },
         {
           "place": "Aspendos (Pamfilia)",
@@ -47,24 +49,25 @@
       ]
     },
     {
-      "country": "Grecja", 
-      "capital":"Ateny", 
+      "country": "Grecja",
+      "capital": "Ateny",
       "url": "greece",
       "countryId": "6697800",
       "currencyCode": "EUR",
-      "population": "10.8  mln. osób", 
-      "religion": "Prawosławie", 
-      "language": "Nowogrecki", 
-      "currency": "Euro", 
-      "lat": "39",
-      "lng": "22",
+      "population": "10.8  mln. osób",
+      "religion": "Prawosławie",
+      "language": "Nowogrecki",
+      "currency": "Euro",
+      "lat": "37.975527",
+      "lng": "23.734855",
+      "timeZone":"Europe/Athens",
       "flag": "https://restcountries.eu/data/grc.svg",
       "countryImg": "greece.jpg",
       "gallery": [
         {
-          "place": "Świątynia Apollina w Delfach", 
-          "info": "Starożytna świątynia poświęcona Apollinowi w Delfach, współcześnie część stanowiska archeologicznego w Delfach, które w 1987 roku zostało wpisane na listę światowego dziedzictwa UNESCO.", 
-          "img":  "greece1.jpg"
+          "place": "Świątynia Apollina w Delfach",
+          "info": "Starożytna świątynia poświęcona Apollinowi w Delfach, współcześnie część stanowiska archeologicznego w Delfach, które w 1987 roku zostało wpisane na listę światowego dziedzictwa UNESCO.",
+          "img": "greece1.jpg"
         },
         {
           "place": "Nawajo",
@@ -91,27 +94,28 @@
           "info": "największa spośród świątyń starożytnej Grecji, znajdująca się w Atenach, poświęcona Zeusowi. Jej budowa trwała z przerwami od VI wieku p.n.e. do II wieku n.e.",
           "img": "greece6.jpg"
         }
-      ] 
+      ]
     },
     {
-      "country": "Hiszpania", 
-      "capital": "Madryt", 
+      "country": "Hiszpania",
+      "capital": "Madryt",
       "url": "spain",
       "countryId": "2510769",
       "currencyCode": "EUR",
-      "population": "45.7  mln. osób", 
-      "religion": "Katolicyzm", 
-      "language": "Hiszpański", 
-      "currency": "Euro", 
-      "lat": "40",
-      "lng": "-4",
+      "population": "45.7  mln. osób",
+      "religion": "Katolicyzm",
+      "language": "Hiszpański",
+      "currency": "Euro",
+      "lat": "40.419348",
+      "lng": "-3.700897",
+      "timeZone":"Europe/Madrid",
       "flag": "https://restcountries.eu/data/esp.svg",
       "countryImg": "spain.jpg",
       "gallery": [
         {
-          "place": "Sagrada Família", 
-          "info": "Secesyjny kościół w Barcelonie w Katalonii o statusie bazyliki mniejszej, uważany za główne osiągnięcie projektanta Antoniego Gaudíego. W 2005 roku fasada Narodzenia Pańskiego i krypta świątyni Sagrada Familia znalazły się na liście dziedzictwa UNESCO w Europie.", 
-          "img":  "spain1.jpg"
+          "place": "Sagrada Família",
+          "info": "Secesyjny kościół w Barcelonie w Katalonii o statusie bazyliki mniejszej, uważany za główne osiągnięcie projektanta Antoniego Gaudíego. W 2005 roku fasada Narodzenia Pańskiego i krypta świątyni Sagrada Familia znalazły się na liście dziedzictwa UNESCO w Europie.",
+          "img": "spain1.jpg"
         },
         {
           "place": "Park Güell",
@@ -138,27 +142,28 @@
           "info": "Znany ośrodek turystyczny, kultu religijnego – siedziba prymasów Hiszpanii. Jeden z najcenniejszych klejnotów hiszpańskiej architektury.",
           "img": "spain6.jpg"
         }
-      ]  
+      ]
     },
     {
-      "country": "Włochy", 
-      "capital":"Rzym", 
+      "country": "Włochy",
+      "capital": "Rzym",
       "url": "italy",
       "countryId": "3165140",
       "currencyCode": "EUR",
-      "population": "60.6  mln. osób", 
-      "religion": "Katolicyzm", 
-      "language": "Włoski", 
-      "currency": "Euro", 
-      "lat": "42",
-      "lng": "12",
+      "population": "60.6  mln. osób",
+      "religion": "Katolicyzm",
+      "language": "Włoski",
+      "currency": "Euro",
+      "lat": "41.902689",
+      "lng": "12.496176",
+      "timeZone":"Europe/Rome",
       "flag": "https://restcountries.eu/data/ita.svg",
       "countryImg": "italy.jpg",
       "gallery": [
         {
-          "place": "Koloseum", 
-          "info": "Amfiteatr, zabytek architektury starożytnego Rzymu, najsłynniejsza i jedna z najwspanialszych budowli starożytnego świata, które przetrwały do ​​naszych czasów.", 
-          "img":  "italy1.jpg"
+          "place": "Koloseum",
+          "info": "Amfiteatr, zabytek architektury starożytnego Rzymu, najsłynniejsza i jedna z najwspanialszych budowli starożytnego świata, które przetrwały do ​​naszych czasów.",
+          "img": "italy1.jpg"
         },
         {
           "place": "Katedra w Mediolanie",
@@ -185,27 +190,28 @@
           "info": "Cinque Terre razem z Portovenere i wyspami Palmaria, Tino i Tinetto w 1997 roku zostały wpisane na listę światowego dziedzictwa kulturalnego i przyrodniczego UNESCO jako Portovenere, Cinque Terre i wyspy (Palmaria, Tino i Tinetto). Powodem wpisu był fakt, iż odcinek wybrzeża, przy którym znajdują się wymienione miejscowości i wyspy, stanowi krajobraz kulturowy o znaczących walorach panoramicznych i kulturalnych.",
           "img": "italy6.jpg"
         }
-      ] 
+      ]
     },
     {
-      "country": "Sri Lanka", 
-      "capital":"Sri Dźajawardanapura Kotte", 
+      "country": "Sri Lanka",
+      "capital": "Sri Dźajawardanapura Kotte",
       "url": "sri-lanka",
       "countryId": "1227603",
       "currencyCode": "LKR",
-      "population": "21.3  mln. osób", 
-      "religion": "Buddyzm", 
-      "language": "Syngaleski, Tamilski,", 
-      "currency": "Rupia lankijska", 
-      "lat": "7",
-      "lng": "81",
+      "population": "21.3  mln. osób",
+      "religion": "Buddyzm",
+      "language": "Syngaleski, Tamilski,",
+      "currency": "Rupia lankijska",
+      "lat": "6.872842",
+      "lng": "79.929345",
+      "timeZone":"Asia/Colombo",
       "flag": "https://restcountries.eu/data/lka.svg",
       "countryImg": "sriLanka.jpg",
       "gallery": [
         {
-          "place": "Sigirija", 
-          "info": "Stanowisko archeologiczne w Sri Lance, z ruinami starożytnego pałacu i twierdzy wzniesionymi za panowania króla Kassapy (473–491) na szczycie 180-metrowej skały. Jedno z siedmiu miejsc w Sri Lance umieszczonych w wykazie światowego dziedzictwa kulturowo-przyrodniczego.", 
-          "img":  "sriLanka1.jpg"
+          "place": "Sigirija",
+          "info": "Stanowisko archeologiczne w Sri Lance, z ruinami starożytnego pałacu i twierdzy wzniesionymi za panowania króla Kassapy (473–491) na szczycie 180-metrowej skały. Jedno z siedmiu miejsc w Sri Lance umieszczonych w wykazie światowego dziedzictwa kulturowo-przyrodniczego.",
+          "img": "sriLanka1.jpg"
         },
         {
           "place": "Szczyt Adama",
@@ -232,27 +238,28 @@
           "info": "Anuradhapura to historyczna stolica syngaleskiego buddyjskiego państwa, które rozwijało się w okresie III wiek p.n.e.–XI wiek n.e. Według legendy początek miastu miała dać mniszka buddyjska Sanghamitta przywożąc i ofiarując królowi Sri Lanki Devanampiyatissowi gałąź ze świętego drzewa Bodhi pod którym miał medytować i doznać oświecenia Budda.",
           "img": "sriLanka6.jpg"
         }
-      ] 
-    }, 
+      ]
+    },
     {
-      "country": "Zjednoczone Emiraty Arabskie", 
-      "capital":"Abu Zabi", 
+      "country": "Zjednoczone Emiraty Arabskie",
+      "capital": "Abu Zabi",
       "url": "uae",
       "countryId": "290557",
       "currencyCode": "AED",
-      "population": "9.3  mln. osób", 
-      "religion": "Islam", 
-      "language": "Arabski", 
-      "currency": "dirham", 
-      "lat": "24",
-      "lng": "54",
+      "population": "9.3  mln. osób",
+      "religion": "Islam",
+      "language": "Arabski",
+      "currency": "dirham",
+      "lat": "24.485832",
+      "lng": "54.356555",
+      "timeZone":"Asia/Dubai",
       "flag": "https://restcountries.eu/data/are.svg",
       "countryImg": "uae.jpg",
       "gallery": [
         {
-          "place": "Burdż Chalifa", 
-          "info": "Najwyższy budynek świata ( o wysokości 828 metrów). Jego nazwa pochodzi od imienia szejka Chalify ibn Zajida Al Nahajjana, obecnego prezydenta Zjednoczonych Emiratów Arabskich.", 
-          "img":  "uae1.jpg"
+          "place": "Burdż Chalifa",
+          "info": "Najwyższy budynek świata ( o wysokości 828 metrów). Jego nazwa pochodzi od imienia szejka Chalify ibn Zajida Al Nahajjana, obecnego prezydenta Zjednoczonych Emiratów Arabskich.",
+          "img": "uae1.jpg"
         },
         {
           "place": "Fontanny Dubajskie",
@@ -279,27 +286,28 @@
           "info": "Budynek stoi w morzu w odległości 280 metrów od brzegu na sztucznej wyspie połączonej z ziemią mostem. Ma wysokość 321 m, obecnie Burj Al Arab zajmuje 5 miejsce wśród najwyższych hoteli na świecie, choć 39% jego całkowitej wysokości to lokale niezajęte.",
           "img": "uae6.jpg"
         }
-      ] 
-    }, 
+      ]
+    },
     {
-      "country": "Egipt", 
-      "capital":"Kair", 
+      "country": "Egipt",
+      "capital": "Kair",
       "url": "egypt",
       "countryId": "357994",
       "currencyCode": "EGP",
-      "population": "100  mln. osób", 
-      "religion": "Islam", 
-      "language": "Arabski", 
-      "currency": "Funt egipski ", 
-      "lat": "27",
-      "lng": "30",
+      "population": "100  mln. osób",
+      "religion": "Islam",
+      "language": "Arabski",
+      "currency": "Funt egipski ",
+      "lat": "30.050747",
+      "lng": "31.246900",
+      "timeZone":"Africa/Cairo",
       "flag": "https://restcountries.eu/data/egy.svg ",
       "countryImg": "egipet.jpg",
       "gallery": [
         {
-          "place": "Piramidy w Gizie", 
-          "info": "Kompleks starożytnych zabytków na płaskowyżu Gizy na przedmieściach Kairu. Uważa się, że budowle powstały w starożytnym królestwie starożytnego Egiptu za panowania IV-VI dynastii (XXVI-XXIII wiek pne).", 
-          "img":  "egipet1.jpg"
+          "place": "Piramidy w Gizie",
+          "info": "Kompleks starożytnych zabytków na płaskowyżu Gizy na przedmieściach Kairu. Uważa się, że budowle powstały w starożytnym królestwie starożytnego Egiptu za panowania IV-VI dynastii (XXVI-XXIII wiek pne).",
+          "img": "egipet1.jpg"
         },
         {
           "place": "Dolina Królów",
@@ -326,27 +334,28 @@
           "info": "Зrzylądek na Riwierze Morza Czerwonego, u południowych wybrzeży Półwyspu Synaj w muhafazie Synaj Południowy w Egipcie (na najdalej wysuniętym na południe skrawku półwyspu).",
           "img": "egipet6.jpg"
         }
-      ] 
+      ]
     },
     {
-      "country": "Czarnogóra", 
-      "capital":"Podgorica", 
+      "country": "Czarnogóra",
+      "capital": "Podgorica",
       "url": "montenegro",
       "countryId": "3194884",
       "currencyCode": "EUR",
-      "population": "621 873 osób", 
-      "religion": "Prawosławie", 
-      "language": "Czarnogórski", 
-      "currency": "Euro", 
-      "lat": "42",
-      "lng": "19.2",
+      "population": "621 873 osób",
+      "religion": "Prawosławie",
+      "language": "Czarnogórski",
+      "currency": "Euro",
+      "lat": "42.436491",
+      "lng": "19.252702",
+      "timeZone":"Europe/Podgorica",
       "flag": "https://restcountries.eu/data/mne.svg",
       "countryImg": "montenegro.jpg",
       "gallery": [
         {
-          "place": "Budva", 
-          "info": "Miasto w Czarnogórze, położone w centralnej części wybrzeża Adriatyku. Budva została założona 2500 lat temu i jest jedną z najstarszych osad na wybrzeżu Adriatyku.", 
-          "img":  "montenegro1.jpg"
+          "place": "Budva",
+          "info": "Miasto w Czarnogórze, położone w centralnej części wybrzeża Adriatyku. Budva została założona 2500 lat temu i jest jedną z najstarszych osad na wybrzeżu Adriatyku.",
+          "img": "montenegro1.jpg"
         },
         {
           "place": "Katedra Świętego Tryfona ",
@@ -373,7 +382,7 @@
           "info": "Żelbetowy most łukowy nad rzeką Tarą w północnej części Czarnogóry. Znajduje się na skrzyżowaniu dróg między miastami Mojkovac, Zabljak i Pljevlja. Most Djurdzhevicha wziął swoją nazwę od nazwiska właściciela gospodarstwa, które znajduje się w pobliżu.",
           "img": "montenegro6.jpg"
         }
-      ] 
+      ]
     }
   ],
   "placeholder": "Wpisz miasto",
@@ -382,7 +391,15 @@
   "wind": "Wiatr:",
   "ms": "m/s",
   "humidity": "Wilgotność:",
-  "day": ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"],
+  "day": [
+    "Niedziela",
+    "Poniedziałek",
+    "Wtorek",
+    "Środa",
+    "Czwartek",
+    "Piątek",
+    "Sobota"
+  ],
   "month": [
     "Stycznia",
     "Lutego",
@@ -438,6 +455,11 @@
     "804": "Pochmurno",
     "900": "Nieznane opady"
   },
-  "error": "Nie ma takiego miejsca"
+  "error": "Nie ma takiego miejsca",
+  "notFound": "Strona nie znaleziona",
+  "authors": [
+    "Irena Kowalewska",
+    "Ivan Shukalo",
+    "Evgenia Kurineva"
+  ]
 }
-

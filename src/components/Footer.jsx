@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Footer() {
+function Footer({authors}) {
+
    return (
       <div>
          footer

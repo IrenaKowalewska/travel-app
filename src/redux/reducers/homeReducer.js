@@ -6,12 +6,16 @@ const IS_LOADING = 'homeReducer/IS_LOADING';
 const SEARCH_FILTER = 'homeReducer/SEARCH_FILTER';
 const RESET_FILTER = 'homeReducer/RESET_FILTER';
 const CURRENT_LANGUAGE = 'homeReducer/CURRENT_LANGUAGE';
+const AUTHORS = 'homeReducer/AUTHORS';
+const NOT_FOUND_MESSAGE = 'homeReducer/NOT_FOUND_MESSAGE';
 
 const initialState = {
   allCountriesInfo: [],
   lang: 'ru',
   isLoading: false,
   filteredAllCountriesInfo: [],
+  authors: [],
+  notFoundMessage: '',
 };
 
 const homeReducer = (state = initialState, action) => {
@@ -38,6 +42,10 @@ const homeReducer = (state = initialState, action) => {
       };
     case CURRENT_LANGUAGE:
       return { ...state, lang: action.payload };
+    case AUTHORS:
+      return { ...state, authors: action.payload };
+    case NOT_FOUND_MESSAGE:
+      return { ...state, notFoundMessage: action.payload };
 
     default:
       return state;
@@ -63,34 +71,15 @@ export const setCurrentLanguage = (lang) => ({
   type: CURRENT_LANGUAGE,
   payload: lang,
 });
+export const setAuthors = (authors) => ({
+  type: AUTHORS,
+  payload: authors,
+});
+export const setNotFoundMessage = (message) => ({
+  type: NOT_FOUND_MESSAGE,
+  payload: message,
+});
 
-const setTimeZone = (url) => {
-  switch (url) {
-    case 'turkey': // Turkey Ankara
-      return 'Europe/Istanbul';
-
-    case 'greece': // Greece Athens
-      return 'Europe/Athens';
-
-    case 'spain': // Spain Madrid
-      return 'Europe/Madrid';
-
-    case 'italy': // Italy Rome
-      return 'Europe/Rome';
-
-    case 'sri-lanka': // Sri Lanka Sri Jayawardenepura Kotte
-      return 'Asia/Colombo';
-
-    case 'uae': // United Arab Emirates Abu Dhabi
-      return 'Asia/Dubai';
-
-    case 'egypt': // Egypt Cairo
-      return 'Africa/Cairo';
-
-    default:
-      return 'Europe/Podgorica'; // Montenegro Podgorica
-  }
-};
 export const initializeApp = (lang) => async (dispatch) => {
   dispatch(isLoading(true));
   try {
@@ -114,7 +103,7 @@ export const initializeApp = (lang) => async (dispatch) => {
       lng: item.lng,
       id: item.countryId,
       currencyCode: item.currencyCode,
-      timeZone: setTimeZone(item.url),
+      timeZone: item.timeZone,
     }));
     dispatch(
       initializeHomePage({
@@ -123,6 +112,8 @@ export const initializeApp = (lang) => async (dispatch) => {
       }),
     );
     dispatch(initializeCountryPage({ countryInfo }));
+    dispatch(setAuthors(response.data.authors));
+    dispatch(setNotFoundMessage(response.data.notFound));
   } catch (error) {
     console.error(error);
   }
