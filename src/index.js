@@ -16,7 +16,7 @@ const theme = createMuiTheme({
     primary: {
       main: '#e1fafe', //фон главной страницы
       light: '#edfdff', //фон страницы страны
-      dark: '#27b28e', //фон footer,header
+      dark: '#77cfb8', //фон footer,header
       // contrastText: '#fff',
     },
     secondary: {

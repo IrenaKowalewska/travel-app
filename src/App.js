@@ -19,11 +19,13 @@ export const LangContext = React.createContext();
 function App() {
   const dispatch = useDispatch();
 
-  const { allCountriesInfo, lang, isLoading, countryInfo } = useSelector(
+  const { allCountriesInfo, lang, isLoading, countryInfo,authors,notFoundMessage } = useSelector(
     (state) => ({
       allCountriesInfo: state.homeReducer.filteredAllCountriesInfo,
       lang: state.homeReducer.lang,
       isLoading: state.homeReducer.isLoading,
+      authors: state.homeReducer.authors,
+      notFoundMessage: state.homeReducer.notFoundMessage,
       countryInfo: state.countryReducer.countryInfo,
       wether: state.countryReducer.countryInfo,
     }),
@@ -96,9 +98,9 @@ function App() {
                     )}
                   />
                 ))}
-              <Route path="*" component={NotFound} />
+              <Route path="*"  render={() => <NotFound notFoundMessage={notFoundMessage}/>} />
             </Switch>
-            <Footer />
+            <Footer authors={authors}/>
           </div>
         )}
       </div>
