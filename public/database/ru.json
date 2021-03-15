@@ -10,8 +10,9 @@
       "religion": "ислам", 
       "language": "турецкий", 
       "currency": "турецкая лира", 
-      "lat": "39",
-      "lng": "35",
+      "lat": "39.920756",
+      "lng": "32.854049",
+      "timeZone":"Europe/Istanbul",
       "flag": "https://restcountries.eu/data/tur.svg",
       "countryImg": "turkey.jpg",
       "gallery": [
@@ -57,8 +58,9 @@
       "religion": "православие", 
       "language": "греческий", 
       "currency": "евро", 
-      "lat": "39",
-      "lng": "22",
+      "lat": "37.975527",
+      "lng": "23.734855",
+      "timeZone":"Europe/Athens",
       "flag": "https://restcountries.eu/data/grc.svg",
       "countryImg": "greece.jpg",
       "gallery": [
@@ -104,8 +106,9 @@
       "religion": "католицизм", 
       "language": "испанский", 
       "currency": "евро", 
-      "lat": "40",
-      "lng": "-4",
+      "lat": "40.419348",
+      "lng": "-3.700897",
+      "timeZone":"Europe/Madrid",
       "flag": "https://restcountries.eu/data/esp.svg",
       "countryImg": "spain.jpg",
       "gallery": [
@@ -151,8 +154,9 @@
       "religion": "католицизм", 
       "language": "итальянский", 
       "currency": "евро", 
-      "lat": "42",
-      "lng": "12",
+      "lat": "41.902689",
+      "lng": "12.496176",
+      "timeZone":"Europe/Rome",
       "flag": "https://restcountries.eu/data/ita.svg",
       "countryImg": "italy.jpg",
       "gallery": [
@@ -198,8 +202,9 @@
       "religion": "буддизм", 
       "language": "сингальский и тамильский", 
       "currency": "Шри-Ланкийская рупия", 
-      "lat": "7",
-      "lng": "81",
+      "lat": "6.872842",
+      "lng": "79.929345",
+      "timeZone":"Asia/Colombo",
       "flag": "https://restcountries.eu/data/lka.svg",
       "countryImg": "sriLanka.jpg",
       "gallery": [
@@ -245,8 +250,9 @@
       "religion": "ислам", 
       "language": "арабский", 
       "currency": "дирхам", 
-      "lat": "24",
-      "lng": "54",
+      "lat": "24.485832",
+      "lng": "54.356555",
+      "timeZone":"Asia/Dubai",
       "flag": "https://restcountries.eu/data/are.svg",
       "countryImg": "uae.jpg",
       "gallery": [
@@ -292,8 +298,9 @@
       "religion": "ислам", 
       "language": "арабский", 
       "currency": "египетский фунт", 
-      "lat": "27",
-      "lng": "30",
+      "lat": "30.050747",
+      "lng": "31.246900",
+      "timeZone":"Africa/Cairo",
       "flag": "https://restcountries.eu/data/egy.svg ",
       "countryImg": "egipet.jpg",
       "gallery": [
@@ -339,8 +346,9 @@
       "religion": "православие", 
       "language": "черногорский", 
       "currency": "евро", 
-      "lat": "42,5",
-      "lng": "19.2",
+      "lat": "42.436491",
+      "lng": "19.252702",
+      "timeZone":"Europe/Podgorica",
       "flag": "https://restcountries.eu/data/mne.svg",
       "countryImg": "montenegro.jpg",
       "gallery": [
@@ -440,5 +448,11 @@
     "804": "Пасмурно",
     "900": "Неизвестные осадки"
   },
-"error": "Нет такого места"
+"error": "Нет такого места",
+"notFound":"Страница не найдена",
+"authors": [
+  "Ирина Ковалевская",
+  "Иван Шукало",
+  "Евгения Куринёва"
+]
 }

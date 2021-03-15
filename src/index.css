@@ -21,9 +21,9 @@ code {
   position: absolute;
   width: 100%;
   height: 100%;
-  background:rgba(25, 105, 67, 0.2);
+  background: rgba(25, 105, 67, 0.2);
 }
-.video-react:hover .video-react-poster::before{
+.video-react:hover .video-react-poster::before {
   opacity: 0;
   transition: all 0.5s ease;
 }

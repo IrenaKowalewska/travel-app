@@ -5,15 +5,15 @@ import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
 
 import { Weather } from '../components/Weather';
-import{ Currency } from '../components/Currency';
+import { Currency } from '../components/Currency';
 
 import Maps from '../components/Maps';
 import DateWidget from '../components/DateWidget';
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 1300,
+    marginBottom: '1rem',
   },
   info: {
     display: 'flex',
@@ -62,19 +62,13 @@ function Country({
             <div>slider</div>
           </div>
           <div className={classes.info_right}>
-
             <div>
-              <Weather 
-                id={id}
-              />
+              <Weather id={id} />
             </div>
             <DateWidget url={url} timeZone={timeZone} />
             <div>
-              <Currency 
-                code={currencyCode}
-                currencyName={currency}
-              />
-            {/* 8ed0e057e6cb73e8e4e8f6b9 */}
+              <Currency code={currencyCode} currencyName={currency} />
+              {/* 8ed0e057e6cb73e8e4e8f6b9 */}
             </div>
           </div>
         </div>
@@ -83,10 +77,7 @@ function Country({
           <BigPlayButton position="center" />
         </Player>
       </Container>
-      <Maps 
-        lat={lat}
-        lng={lng}
-      />
+      <Maps lat={lat} lng={lng} />
     </Box>
   );
 }
