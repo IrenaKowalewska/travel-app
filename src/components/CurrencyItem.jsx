@@ -1,5 +1,4 @@
-const CurrencyItem = ({currency, code, currencyName}) => {
-    console.log(currency.USD, code, currencyName);
+function CurrencyItem({currency, code, currencyName}) {
     return <div>
         <p className="currency-text">1 {currencyName.toUpperCase()} ({code})</p>
         <p className="currency-text"> {currency.USD} USD</p>

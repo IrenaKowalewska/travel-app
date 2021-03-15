@@ -7,6 +7,7 @@ import CountryPageInfo from '../components/CountryPageInfo';
 import { Weather } from '../components/Weather';
 import { Currency } from '../components/Currency';
 
+import { Slider } from '../components/Slider';
 import Maps from '../components/Maps';
 import DateWidget from '../components/DateWidget';
 
@@ -42,6 +43,7 @@ function Country({
   lng,
   id,
   currencyCode,
+  gallery,
   timeZone,
 }) {
   const classes = useStyles();
@@ -59,7 +61,9 @@ function Country({
               language={language}
               currency={currency}
             />
-            <div>slider</div>
+            <div>
+              <Slider gallery={gallery}/>
+            </div>
           </div>
           <div className={classes.info_right}>
             <div>
@@ -67,8 +71,12 @@ function Country({
             </div>
             <DateWidget url={url} timeZone={timeZone} />
             <div>
-              <Currency code={currencyCode} currencyName={currency} />
-              {/* 8ed0e057e6cb73e8e4e8f6b9 */}
+
+              <Currency 
+                code={currencyCode}
+                currencyName={currency}
+              />
+
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../node_modules/video-react/dist/video-react.css';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';

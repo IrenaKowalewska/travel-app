@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { WeatherItem } from './WeatherItem';
 
-const Weather = ({id}) => {
+function Weather({id}) {
     const [weather, setWeather] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch(`http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=f3416cd6137a98304fe1bc4a4fec55ff`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=f3416cd6137a98304fe1bc4a4fec55ff`)
                 .then(res => res.json())
                 .then(res => {
                     setWeather(res);

@@ -1,4 +1,4 @@
-const WeatherItem = ({weather}) => {
+function WeatherItem({weather}) {
     const setLanguage = (id) => {
         if (localStorage.getItem('lang') === 'pl') {
         const weather = {
@@ -129,7 +129,7 @@ const WeatherItem = ({weather}) => {
     }
     return <div className="weather-block">
         <div className="weather-temp">
-            <span className="temp-icon">{<img src={`https://openweathermap.org/img/wn/${weather.weather[0]['icon']}@2x.png`}/>}</span> 
+            <span className="temp-icon">{<img src={`https://openweathermap.org/img/wn/${weather.weather[0]['icon']}@2x.png`} alt="weather-img"/>}</span> 
             <span className="temp">{`${Math.round(weather.main.temp - 273,15)}`}&deg;C</span></div>
         <div className="temp-descr">{setLanguage(weather.weather[0].id)}</div>
     </div>
