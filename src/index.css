@@ -54,8 +54,8 @@ code {
 .weather-block {
   margin: 2rem auto;
   padding: 0.5em;
-  border-radius: 10px;
-  background-color: rgb(25, 105, 67, 0.1);
+  border-radius: 4px;
+  background-color: rgb(119, 207, 184, 0.3);
   max-width: 190px;
 }
 .weather-temp {
@@ -85,6 +85,9 @@ code {
 .carousel-caption h3 {
   background-color:rgba(0, 0, 0, 0.5);
   text-shadow: black 2px 2px 2px;
+}
+.carousel-caption h3 {
+ font-size: 1.1rem;
 }
 
 .carousel-item img {

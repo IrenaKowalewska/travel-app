@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../node_modules/video-react/dist/video-react.css';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
@@ -10,26 +7,25 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
-/*для material ui переопределение дефолтных цветов*/
+import '../node_modules/video-react/dist/video-react.css';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
+/*override the default colors material ui*/
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#e1fafe', //фон главной страницы
-      light: '#edfdff', //фон страницы страны
-      dark: '#77cfb8', //фон footer,header
-      // contrastText: '#fff',
+      main: '#e1fafe', //background Home page
+      light: '#edfdff', //background Country page
+      dark: '#77cfb8', //background footer,header
     },
     secondary: {
-      light: '#ffff', //фон карточки
-      main: '#196943', // для виджетов
-      //   dark: '#ba000d',
-      //   contrastText: '#000',
+      light: '#ffff', //background Card
+      main: '#196943', // widgets color
     },
     text: {
-      primary: '#031e11', //цвет всего текста
-      secondary: '#196943', // для виджетов
-      // disabled: '#00227b',
-      // hint: '#ffc107',
+      primary: '#031e11', //test color
+      secondary: '#196943', // widgets color
     },
   },
 });

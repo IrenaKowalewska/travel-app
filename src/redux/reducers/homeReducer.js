@@ -27,9 +27,7 @@ const homeReducer = (state = initialState, action) => {
     case SEARCH_FILTER:
       const newFilteredAllCountriesInfo = state.filteredAllCountriesInfo.filter(
         (item) =>
-          item.country.toLocaleLowerCase().indexOf(action.payload) === -1
-            ? false
-            : true,
+          item.country.toLocaleLowerCase().indexOf(action.payload) !== -1,
       );
       return {
         ...state,
@@ -105,7 +103,6 @@ export const initializeApp = (lang) => async (dispatch) => {
       currencyCode: item.currencyCode,
       gallery: item.gallery,
       timeZone: item.timeZone,
-
     }));
     dispatch(
       initializeHomePage({

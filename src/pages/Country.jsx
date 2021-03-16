@@ -3,10 +3,8 @@ import Container from '@material-ui/core/Container';
 import { Box, makeStyles } from '@material-ui/core';
 import { Player, BigPlayButton } from 'video-react';
 import CountryPageInfo from '../components/CountryPageInfo';
-
 import { Weather } from '../components/Weather';
 import { Currency } from '../components/Currency';
-
 import { Slider } from '../components/Slider';
 import Maps from '../components/Maps';
 import DateWidget from '../components/DateWidget';
@@ -14,7 +12,7 @@ import DateWidget from '../components/DateWidget';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 1300,
-    marginBottom: '1rem',
+    marginBottom: '2rem',
   },
   info: {
     display: 'flex',
@@ -62,21 +60,16 @@ function Country({
               currency={currency}
             />
             <div>
-              <Slider gallery={gallery}/>
+              <Slider gallery={gallery} />
             </div>
           </div>
           <div className={classes.info_right}>
             <div>
               <Weather id={id} />
             </div>
-            <DateWidget url={url} timeZone={timeZone} />
+            <DateWidget timeZone={timeZone} />
             <div>
-
-              <Currency 
-                code={currencyCode}
-                currencyName={currency}
-              />
-
+              <Currency code={currencyCode} currencyName={currency} />
             </div>
           </div>
         </div>

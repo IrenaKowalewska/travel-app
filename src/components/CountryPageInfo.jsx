@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: 600,
-    fontSize: '1.1rem',
+    fontSize: '1.5rem',
     margin: '1.8rem 0 1.5rem',
     [theme.breakpoints.down('xs')]: {
       margin: '0 0 1rem 0',
@@ -54,42 +54,35 @@ function CountryPageInfo({
           color="textPrimary"
           component="h2"
         >
-         {country}
+          {country}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-        {lang === 'ru'
-            ? 'Столица'
-            : lang === 'en'
-            ? 'Capital'
-            : 'Kapitał'} — {capital}
-        </Typography>
-        <Typography className={classes.bold} color="textPrimary" component="p">
-        {lang === 'ru'
-            ? 'Население'
-            : lang === 'en'
-            ? 'Population'
-            : 'Populacja'} — {population}
+          {lang === 'ru' ? 'Столица' : lang === 'en' ? 'Capital' : 'Kapitał'} —{' '}
+          {capital}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
           {lang === 'ru'
-            ? 'Религия'
+            ? 'Население'
             : lang === 'en'
-            ? 'Religion'
-            : 'Religia'} — {religion}
+            ? 'Population'
+            : 'Populacja'}{' '}
+          — {population}
+        </Typography>
+        <Typography className={classes.bold} color="textPrimary" component="p">
+          {lang === 'ru' ? 'Религия' : lang === 'en' ? 'Religion' : 'Religia'} —{' '}
+          {religion}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
           {lang === 'ru'
             ? 'Официальный язык'
             : lang === 'en'
             ? 'Official language'
-            : 'Oficjalny język'} — {language}
+            : 'Oficjalny język'}{' '}
+          — {language}
         </Typography>
         <Typography className={classes.bold} color="textPrimary" component="p">
-          {lang === 'ru'
-            ? 'Валюта'
-            : lang === 'en'
-            ? 'Currency'
-            : 'Waluta'} – {currency}
+          {lang === 'ru' ? 'Валюта' : lang === 'en' ? 'Currency' : 'Waluta'} –{' '}
+          {currency}
         </Typography>
       </CardContent>
     </Card>
