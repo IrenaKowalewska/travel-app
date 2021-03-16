@@ -6,11 +6,8 @@ import {
   ZoomControl,
   TypeSelector,
 } from 'react-yandex-maps';
-import { LangContext } from '../App';
 
-const Maps = ({ lat, lng }) => {
-  const lang = React.useContext(LangContext);
-  console.log(lang);
+function Maps ({ lat, lng }) {
   const mapData = {
     center: [lat, lng],
     zoom: 5,

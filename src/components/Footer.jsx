@@ -6,21 +6,22 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      background: '#77CFB8',
+      background: '#77cfb8',
       padding: '10px 25px',
-      fontSize: 20,
-      fontWeight: 700
+      fontSize: '1rem',
+      fontWeight: 600,
+      lineHeight: '1.5rem'
    },
    logo_rs: {
-     width: 200,
+     width: 70,
    },
    authors: {
       display: 'flex',
       flexDirection: 'column'
    },
    authors_link: {
-      color: '#000',
-      textDecoration: 'none'
+      color: '#031e11',
+      textDecoration: 'none',
    }
  }));
 
@@ -35,7 +36,7 @@ function Footer({ authors }) {
          <div className={classes.authors}>
             <a className={classes.authors_link} href='https://github.com/IrenaKowalewska'>{authors[0]}</a>
             <a className={classes.authors_link} href='https://github.com/Metanix777'>{authors[1]}</a>
-            <a className={classes.authors_link} href='https://github.com/Evgenia-cyber'>{authors[2]}</a>
+            <a className={classes.authors_link} href='https://github.com/Evgenia-cyber'>{authors[2]}</a> 
          </div>
       </div>
    )
